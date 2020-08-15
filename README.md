@@ -27,3 +27,22 @@ The biggest challenge is going to be how to create a model that can perform well
 #### Future Work
 
 In the future, I would like deep learning approaches like RNN and LSTM. I'm also hoping to use Dash and Flask in order to host my findings publicly, allow people to input their own scenarios into the model, and visualize the output and data. When the season is available, I would also like to post summaries of how my model compared to the real play calls.
+
+## Technical Details
+
+#### Packages
+The packages used to run this notebook are as followed:
+- Pandas
+- Matplotlib
+- Numpy
+- Feather
+- Scikit Learn
+- XGBoost
+- LightGBM
+- Dateutil
+
+#### Models
+
+The final saved model from LightGBM is found in the model.txt file in the repo.
+
+Found in the notebook, there are experiments using RandomForest, XGBoost, and LightGBM. I found that LightGBM gave me the best performance from both accuracy and dramatically reduced training times over something like RandomForest.
